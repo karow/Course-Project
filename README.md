@@ -32,11 +32,12 @@ The previous steps are being repeated with the "Train Data" which results into a
 The two data sets (train_merged and test_merged) are being merged row-wise into one data set called "test_train"
 
 6.
-The features table is being read into R Studio. This table contains descriptive names for the measurements/activies (test_Y and train_Y)
+The features table is being read into R Studio. This table contains descriptive names for the measurements/activies (test_Y and train_Y).
+These names are being cleaned up by removing special characters like "(,),-" etc. and those names are being assigned as column names.
 
+7.
+Only the measurments that contain the word "mean" or "std" are being extracted from the dataset
 
-
-
-
-
+8.
+An independent tidy data set is created by calculating the mean of each volunteers activity. This data set is exported as a text file in the current working directory.
 
